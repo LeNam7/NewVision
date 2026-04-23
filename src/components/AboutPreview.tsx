@@ -18,7 +18,7 @@ export default function AboutPreview() {
                   className="about-image"
               >
                   <div className="about-img-box">
-                      <img src={`${import.meta.env.BASE_URL}01.jpg`} alt="New Vision Office" />
+                      <img src={`${import.meta.env.BASE_URL}01_new_vision.png`} alt="New Vision Office" />
                   </div>
               </motion.div>
               <motion.div 
