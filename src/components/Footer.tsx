@@ -52,10 +52,10 @@ export default function Footer() {
               style={{ paddingBottom: '3rem', borderTop: 'none', gap: '4rem' }}
           >
               <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }} className="footer-col brand-col">
-                  <p style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '1.5rem', fontWeight: 'bold' }}>Công ty TNHH New Vision</p>
+                  <p style={{ color: '#fff', fontSize: '1.2rem', marginBottom: '1.5rem', fontWeight: 'bold' }}>Công ty TNHH Đầu tư và phát triển công nghệ Tầm Nhìn Mới</p>
                   <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.6', whiteSpace: 'pre-line' }}>{t('footer.addressText')}</p>
-                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.6' }}>Hotline: (+84) 989 92 92 69</p>
-                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.6' }}>Email: anhdt@nvs-technology.com</p>
+                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.6' }}>Hotline: 0978 387 887</p>
+                  <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.9rem', lineHeight: '1.6' }}>Email: nvstechno@gmail.com</p>
               </motion.div>
               <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }} className="footer-col links-col">
                   <h4 style={{ color: '#fff', marginBottom: '1.5rem', fontSize: '1.1rem' }}>{t('footer.companyText')}</h4>
