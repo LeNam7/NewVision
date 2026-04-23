@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FileText, Database, Server, CheckCircle2, ChevronRight, Binary, ScanLine } from 'lucide-react';
+import { Database, Server, CheckCircle2, ChevronRight, Binary, ScanLine } from 'lucide-react';
 
 const DataDigitizationDemo = () => {
     const [step, setStep] = useState(0);

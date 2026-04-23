@@ -29,7 +29,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   // Helper to get nested properties by string path (like 'navbar.about')
-  const getNestedTranslation = (obj: any, path: string): string => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const getNestedTranslation = (obj: Record<string, any>, path: string): string => {
     return path.split('.').reduce((acc, part) => acc && acc[part], obj) || path;
   };
 
@@ -45,6 +46,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useLanguage() {
   const context = useContext(LanguageContext);
   if (context === undefined) {
