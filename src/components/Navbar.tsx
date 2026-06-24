@@ -403,7 +403,7 @@ export default function Navbar() {
                       <p style={{ color: '#9ca3af', maxWidth: '600px', margin: '1rem auto 0' }}>{t('contact.desc')}</p>
                    </div>
 
-                   <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) minmax(300px, 1.5fr)', gap: '4rem' }} className="contact-modal-grid">
+                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }} className="contact-modal-grid">
                        
                        <style>
                            {`
@@ -413,6 +413,9 @@ export default function Navbar() {
                            .contact-input { width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.03); color: #fff; font-family: inherit; font-size: 0.95rem; transition: all 0.3s; }
                            .contact-input:focus { outline: none; border-color: #10b981; background: rgba(16,185,129,0.05); }
                            .contact-label { display: block; margin-bottom: 0.5rem; color: #9ca3af; font-size: 0.9rem; }
+                            body.light-mode .contact-input { border: 1px solid rgba(0,0,0,0.15); background: rgba(0,0,0,0.02); color: #1f2937; }
+                            body.light-mode .contact-input:focus { background: rgba(16,185,129,0.03); }
+                            body.light-mode .contact-label { color: #4b5563; }
                            `}
                        </style>
 
@@ -421,22 +424,22 @@ export default function Navbar() {
                            
                            <div style={{ marginBottom: '1.5rem' }}>
                                <div style={{ color: '#10b981', marginBottom: '0.3rem', fontSize: '1.1rem' }}>{t('contact.address_label')}</div>
-                               <div style={{ color: '#9ca3af', fontSize: '0.95rem', lineHeight: '1.5' }}>{t('contact.address_val')}</div>
+                               <div style={{ color: theme === 'dark' ? '#9ca3af' : '#4b5563', fontSize: '0.95rem', lineHeight: '1.5' }}>{t('contact.address_val')}</div>
                            </div>
                            
                            <div style={{ marginBottom: '1.5rem' }}>
                                <div style={{ color: '#4ade80', marginBottom: '0.3rem', fontSize: '1.1rem' }}>{t('contact.office_label')}</div>
-                               <div style={{ color: '#9ca3af', fontSize: '0.95rem', lineHeight: '1.5' }}>{t('contact.office_val')}</div>
+                               <div style={{ color: theme === 'dark' ? '#9ca3af' : '#4b5563', fontSize: '0.95rem', lineHeight: '1.5' }}>{t('contact.office_val')}</div>
                            </div>
                            
                            <div style={{ marginBottom: '1.5rem' }}>
                                <div style={{ color: '#a855f7', marginBottom: '0.3rem', fontSize: '1.1rem' }}>{t('contact.phone_label')}</div>
-                               <div style={{ color: '#fff', fontSize: '1.1rem', fontWeight: 'bold' }}>(+84) 989 92 92 69</div>
+                               <div style={{ color: theme === 'dark' ? '#fff' : '#1f2937', fontSize: '1.1rem', fontWeight: 'bold' }}>(+84) 989 92 92 69</div>
                            </div>
                            
                            <div>
                                <div style={{ color: '#22c55e', marginBottom: '0.3rem', fontSize: '1.1rem' }}>{t('contact.email_label')}</div>
-                               <div style={{ color: '#9ca3af', fontSize: '0.95rem' }}>anhdt@nvs-technology.com</div>
+                               <div style={{ color: theme === 'dark' ? '#9ca3af' : '#4b5563', fontSize: '0.95rem' }}>nvstechno@gmail.com</div>
                            </div>
                        </div>
 
