@@ -434,7 +434,7 @@ export default function Navbar() {
                            
                            <div style={{ marginBottom: '1.5rem' }}>
                                <div style={{ color: '#a855f7', marginBottom: '0.3rem', fontSize: '1.1rem' }}>{t('contact.phone_label')}</div>
-                               <div style={{ color: theme === 'dark' ? '#fff' : '#1f2937', fontSize: '1.1rem', fontWeight: 'bold' }}>(+84) 989 92 92 69</div>
+                               <div style={{ color: theme === 'dark' ? '#fff' : '#1f2937', fontSize: '1.1rem', fontWeight: 'bold' }}>0978 387 887</div>
                            </div>
                            
                            <div>
